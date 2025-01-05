@@ -10,28 +10,12 @@ ComicSnap is an application for manga and comic book lovers, created to help use
 ComicSnap was built using several technologies: HTML, CSS and JavaScript for the front-end development, Python for the back-end development, and the Flask microframework to implement the server; Comic Vine was also used as an API to draw from for comics.
 
 <!-- SYSTEM REQUIREMENTS -->
-## System Requirements (recommended)
-
-> [!IMPORTANT]
-> To correctly execute the behavior of this PWA you must have the following prerequisites pre-installed on your system:
-> - Python 3.x
-> - pip (Python Package Installer) - latest version
-
-If you think you cannot meet these requirements, or at least not the recommended version, we recommend you check the installation of them by following this tutorial [here](https://github.com/r3aprz/Python-installation-tutorial).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SYSTEM REQUIREMENTS -->
 ## System Requirements
 
 > [!IMPORTANT]
 > To correctly execute the behavior of this PWA you must have the following prerequisites pre-installed on your system:
 > - Python 3.x
 > - pip (Python Package Installer) - latest version
-
-If you think you cannot meet these requirements, or at least not the recommended version, we recommend you check the installation of them by following this tutorial [here](https://github.com/r3aprz/Python-installation-tutorial).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SETTING UP VENV -->
 ## Setting Up the Virtual Environment
@@ -65,10 +49,8 @@ If you think you cannot meet these requirements, or at least not the recommended
     ```
     Then, to update any modules:
     ```bash
-    pip install --upgrade Flask Werkzeug click itsdangerous Jinja2 MarkupSafe Flask-WTF WTForms email_validator websocket_server
+    pip install --upgrade flask werkzeug PyJWT requests python-dotenv flask-cors sqlite3 xml.etree.ElementTree uuid jwt functools datetime timezone
     ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## How to run
 
