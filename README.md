@@ -16,6 +16,7 @@ ComicSnap was built using several technologies: HTML, CSS and JavaScript for the
 > To correctly execute the behavior of this PWA you must have the following prerequisites pre-installed on your system:
 > - Python 3.x
 > - pip (Python Package Installer) - latest version
+> - SQlite Database - latest version (https://www.sqlite.org/)
 
 <!-- SETTING UP VENV -->
 ## Setting Up the Virtual Environment
