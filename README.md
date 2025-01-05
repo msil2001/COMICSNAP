@@ -52,6 +52,24 @@ ComicSnap was built using several technologies: HTML, CSS and JavaScript for the
     ```bash
     pip install --upgrade flask werkzeug PyJWT requests python-dotenv flask-cors sqlite3 xml.etree.ElementTree uuid jwt functools datetime timezone
     ```
+7. Get your ComicVine API key from: https://comicvine.gamespot.com/api/
+8. Create your own .env file and put your keys following this template:
+	```txt
+ 	# Chiavi di sicurezza
+	SECRET_KEY=your_secret_key
+	COMICVINE_API_KEY=yout_comicvine_api_key
+	
+	# Configurazione Database
+	DATABASE_PATH=comicsnap.db
+	
+	# Altri parametri di configurazione
+	MAX_SEARCH_RESULTS=100
+	TOKEN_EXPIRY_HOURS=24
+	```
+ 9. Include your .env file to your .gitignore
+    ```bash
+    echo ".env" >> .gitignore
+    ```
 
 ## How to run
 
