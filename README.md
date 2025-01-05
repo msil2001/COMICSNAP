@@ -21,6 +21,18 @@ If you think you cannot meet these requirements, or at least not the recommended
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SYSTEM REQUIREMENTS -->
+## System Requirements
+
+> [!IMPORTANT]
+> To correctly execute the behavior of this PWA you must have the following prerequisites pre-installed on your system:
+> - Python 3.x
+> - pip (Python Package Installer) - latest version
+
+If you think you cannot meet these requirements, or at least not the recommended version, we recommend you check the installation of them by following this tutorial [here](https://github.com/r3aprz/Python-installation-tutorial).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- SETTING UP VENV -->
 ## Setting Up the Virtual Environment
 
@@ -47,6 +59,16 @@ If you think you cannot meet these requirements, or at least not the recommended
         ```
 		> **Warning**  
 		> Some versions of Windows may restrict the execution of scripts such as `.bat` from the terminal for security reasons. Make sure you have this option ***disabled***. You may find this option under the name *UAC* (User Access Control).
+6. Install dependencies:
+    ```bash
+    pip install --upgrade -r requirements.txt
+    ```
+    Then, to update any modules:
+    ```bash
+    pip install --upgrade Flask Werkzeug click itsdangerous Jinja2 MarkupSafe Flask-WTF WTForms email_validator websocket_server
+    ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## How to run
 
