@@ -96,11 +96,7 @@ def inizializza_db():
         CREATE TABLE IF NOT EXISTS fumetti (
             id TEXT PRIMARY KEY,
             titolo TEXT NOT NULL,
-            autore TEXT NOT NULL,
             url_copertina TEXT,
-            prezzo REAL NOT NULL,
-            genere TEXT,
-            descrizione TEXT,
             data_aggiunta DATETIME DEFAULT CURRENT_TIMESTAMP,
             editore TEXT,
             anno INTEGER
