@@ -1,4 +1,6 @@
-![LOGO](ComicSnap/static/img/logocomicsnap.jpg)
+<div style="text-align: center;">
+    <img src="ComicSnap/static/img/logocomicsnap.jpg" alt="Logo" />
+</div>
 
 # ComicSnap
 
