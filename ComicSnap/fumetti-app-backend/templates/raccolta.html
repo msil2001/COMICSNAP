@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags per caratteri e responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Collegamenti a risorse esterne -->
+    <!-- Remix Icon per le icone UI -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Fogli di stile personalizzati -->
+    <link rel="stylesheet" href="static/stiliraccolta.css" />
+    <link rel="stylesheet" href="static/style.css" />
+    <title>ComicSnap</title>
+  </head>
+  <body>
+    <!-- Barra di navigazione principale -->
+    <nav class="section__container nav__container">
+      <!-- Logo del sito con link alla home -->
+      <a href="/" class="nav__logo">COMICSNAP</a>
+      
+      <!-- Barra di navigazione principale -->
+      <ul class="nav__links">
+        <li class="link"><a href="index.html" class="active">HOME</a></li>
+        <li class="link"><a href="raccolta.html">RACCOLTA</a></li>
+      </ul>
+      
+      <!-- Area icone di utilità -->
+      <div class="nav__icons">
+        <!-- Icona autenticazione utente -->
+        <span id="user-auth-icon">
+          <i class="ri-shield-user-line"></i>
+        </span>
+        <!-- Area ricerca con dropdown -->
+        <span>
+            <i class="ri-search-line"></i>
+            <!-- Dropdown per la ricerca -->
+            <div id="search-dropdown" class="search-dropdown">
+                <input type="text" id="search-input" placeholder="Cerca fumetti...">
+            </div>
+        </span>
+      </div>
+    </nav>
+
+    <!-- Sezione principale della raccolta fumetti -->
+    <section class="section__container raccolta__container">
+      <h2 class="section__title">I miei fumetti</h2>
+      <div class="raccolta__grid">
+      </div>
+    </section>
+
+  
+   <!-- Sezione dei brand -->
+    <section class="section__container brands__container">
+      <div class="brand__image">
+        <img src="static/assets/Spider-Man.png" alt="brand Spiderman" />
+      </div>
+      <div class="brand__image">
+        <img src="static/assets/Goku.png" alt="brand Goku" />
+      </div>
+      <div class="brand__image">
+        <img src="static/assets/CaptainAmerica.png" alt="brand CapAmerica" />
+      </div>
+      <div class="brand__image">
+        <img src="static/assets/Todoroki.png" alt="brand Todoroki" />
+      </div>
+      <div class="brand__image">
+        <img src="static/assets/Deadpool.png" alt="brand DP" />
+      </div>
+      <div class="brand__image">
+        <img src="static/assets/Naruto.png" alt="brand Naruto" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section__container footer__container">
+      <div class="footer__col footer__logo-col">
+        <span class="footer__logo">COMICSNAP</span>
+      </div>
+      <!-- Dettagli del progetto e crediti -->
+      <div class="footer__col footer__project-details">
+        <div class="project__partners">
+          <p>Castrese Luca Lucciola / 0124002532</p>
+          <p>Mauro Silvestro / 0124002859</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Collegamenti a script JavaScript -->
+    <script src="static/script.js"></script>
+  </body>
+</html>
