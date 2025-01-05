@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <!-- Meta tag per la codifica dei caratteri e la visualizzazione responsive -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Collegamenti a fogli di stile esterni -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/stiliraccolta.css" />
+    <title>ComicSnap - I tuoi Consigli</title>
+  </head>
+  <body>
+    <!-- Barra di navigazione -->
+    <nav class="section__container nav__container">
+      <a href="/" class="nav__logo">COMICSNAP</a>
+      <ul class="nav__links">
+        <li class="link"><a href="/">TORNA ALLA HOME</a></li>
+      </ul>
+    </nav>
+
+    <!-- Sezione principale con griglia delle raccomandazioni -->
+    <section class="section__container raccolta__container">
+      <h2 class="section__title">Fumetti Consigliati per Te</h2>
+      <!-- Container per le card dei fumetti raccomandati -->
+      <div class="raccomandazioni__grid">
+      </div>
+    </section>
+
+   <!-- Sezione dei brand -->
+    <section class="section__container brands__container">
+      <div class="brand__image">
+        <img src="static/assets/Spider-Man.png" alt="brand Spiderman" />
+      </div>
+      <div class="brand__image">
+        <img src="static/assets/Goku.png" alt="brand Goku" />
+      </div>
+      <div class="brand__image">
+        <img src="static/assets/CaptainAmerica.png" alt="brand CapAmerica" />
+      </div>
+      <div class="brand__image">
+        <img src="static/assets/Todoroki.png" alt="brand Todoroki" />
+      </div>
+      <div class="brand__image">
+        <img src="static/assets/Deadpool.png" alt="brand DP" />
+      </div>
+      <div class="brand__image">
+        <img src="static/assets/Naruto.png" alt="brand Naruto" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section__container footer__container">
+      <div class="footer__col footer__logo-col">
+        <span class="footer__logo">COMICSNAP</span>
+      </div>
+      <!-- Dettagli del progetto e crediti -->
+      <div class="footer__col footer__project-details">
+        <div class="project__partners">
+          <p>Castrese Luca Lucciola / 0124002532</p>
+          <p>Mauro Silvestro / 0124002859</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script per il caricamento delle raccomandazioni -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Recupera il token di autenticazione dal localStorage
+        const token = localStorage.getItem('token');
+        const container = document.querySelector('.raccomandazioni__grid');
+        
+        // Reindirizza alla pagina di login se non c'è token
+        if (!token) {
+          window.location.href = '/logreg';
+          return;
+        }
+        
+        // Piccolo delay per assicurare che tutto sia caricato
+        setTimeout(() => {
+          // Richiesta API per ottenere le raccomandazioni
+          fetch('/raccomandazioni', {
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Accept': 'application/json'
+            }
+          })
+          .then(response => response.json())
+          .then(fumetti => {
+            container.innerHTML = '';
+            
+            // Gestisce il caso in cui non ci sono raccomandazioni
+            if (fumetti.length === 0) {
+              container.innerHTML = '<p>Nessuna raccomandazione disponibile</p>';
+              return;
+            }
+
+            // Crea una card per ogni fumetto raccomandato
+            fumetti.forEach(fumetto => {
+              const card = document.createElement('div');
+              card.classList.add('raccolta__card');
+              // Template HTML per la card del fumetto
+              card.innerHTML = `
+                <div class="card-container">
+                  <img src="${fumetto.copertina || '/static/comic-placeholder.png'}" 
+                       alt="${fumetto.titolo}"
+                       class="comic-image"
+                       onerror="this.src='/static/comic-placeholder.png'" />
+                  ${fumetto.rating_medio ? `<span class="rating-indicator">★ ${fumetto.rating_medio}</span>` : ''}
+                </div>
+                <h4>${fumetto.titolo}</h4>
+                <p>Anno: ${fumetto.anno || 'N/D'}</p>
+                <p>Editore: ${fumetto.editore || 'N/D'}</p>
+              `;
+              container.appendChild(card);
+            });
+          })
+          .catch(error => {
+            console.error('Errore:', error);
+            container.innerHTML = '<p>Errore nel caricamento delle raccomandazioni</p>';
+          });
+        }, 100);
+      });
+    </script>
+  </body>
+</html>
