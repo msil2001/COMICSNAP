@@ -1,4 +1,4 @@
-![LOGO](ComicSnap/static/img/homecomicsnap.jpg)
+![LOGO](ComicSnap/static/img/logocomicsnap.jpg)
 
 # ComicSnap
 
