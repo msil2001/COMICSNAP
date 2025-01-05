@@ -16,6 +16,8 @@ You can run the application by typing:
 
 ComicSnap should now be accessible at http://127.0.0.1:5000 in your web-browser.
 
+![CSS3]
+
 ## License
 
 This application was distributed under the Apache 2.0 License. See [LICENSE](LICENSE) for more details.
