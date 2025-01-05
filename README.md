@@ -10,7 +10,7 @@ ComicSnap is an application for manga and comic book lovers, created to help use
 ComicSnap was built using several technologies: HTML, CSS and JavaScript for the front-end development, Python for the back-end development, and the Flask microframework to implement the server; Comic Vine was also used as an API to draw from for comics.
 
 <!-- SYSTEM REQUIREMENTS -->
-## System Requirements
+## System Requirements (recommended)
 
 > [!IMPORTANT]
 > To correctly execute the behavior of this PWA you must have the following prerequisites pre-installed on your system:
