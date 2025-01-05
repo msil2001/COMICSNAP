@@ -1,3 +1,4 @@
+!(LOGO)(ComicSnap/static/img/homecomicsnap.jpg
 
 # ComicSnap
 
