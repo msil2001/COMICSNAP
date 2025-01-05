@@ -4,6 +4,8 @@
 
 ## About the project
 
+![HOME](ComicSnap/static/img/homecomicsnap.jpg)
+
 ComicSnap is an application for manga and comic book lovers, created to help users choose their next reads through our recommendation system and to allow them to take into account the comics they have already read, giving them the chance to assign a rating from 1 to 5 stars and a weight that can influence the recommendations.
 
 ## Built with
