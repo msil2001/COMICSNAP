@@ -1,6 +1,6 @@
-![LOGO](ComicSnap/static/img/logocomicsnap.jpg)
-
 # ComicSnap
+
+![LOGO](ComicSnap/static/img/logocomicsnap.jpg)
 
 ## About the project
 
