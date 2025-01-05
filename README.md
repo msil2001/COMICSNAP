@@ -1,7 +1,5 @@
 # ComicSnap
 
-![LOGO](ComicSnap/static/img/logocomicsnap.jpg)
-
 <p align="center">
   <img src="ComicSnap/static/img/logocomicsnap.jpg" width="400" alt="Logo"/>
   <br>
