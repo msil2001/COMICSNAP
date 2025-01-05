@@ -14,7 +14,7 @@ You can run the application by typing:
 
 ```python app.py```
 
-ComicSnap should now be accessible at http:// in your web-browser.
+ComicSnap should now be accessible at http://127.0.0.1:5000 in your web-browser.
 
 ## License
 
