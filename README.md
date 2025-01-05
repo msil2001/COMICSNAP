@@ -1,3 +1,5 @@
+[![GitHub][GitHub.com]][GitHub-url]
+
 # ComicSnap
 
 ## About the project
