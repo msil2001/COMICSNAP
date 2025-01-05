@@ -8,7 +8,7 @@
 ## About the project
 
 <p align="center">
-  <img src="ComicSnap/static/img/homecomicsnap.jpg" width="400" alt="Home"/>
+  <img src="ComicSnap/static/img/homecomicsnap.jpg" width="500" alt="Home"/>
   <br>
 </p>
 
