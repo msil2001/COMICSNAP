@@ -7,7 +7,7 @@ ComicSnap is an application for manga and comic book lovers, created to help use
 
 ## Built with
 
-ComicSnap was built using several technologies: HTML, CSS and JavaScript for the front-end development, Python for the back-end development, and the Flask microframework to implement the server; Comic Vine was also used as an API to draw from for comics.
+ComicSnap was built using several technologies: HTML, CSS and JavaScript for the front-end development, Python for the back-end development with the Flask microframework to implement the server, and SQLite as the technology to build the database; Comic Vine was also used as an API to draw from for comics.
 
 <!-- SYSTEM REQUIREMENTS -->
 ## System Requirements
@@ -16,7 +16,7 @@ ComicSnap was built using several technologies: HTML, CSS and JavaScript for the
 > To correctly execute the behavior of this PWA you must have the following prerequisites pre-installed on your system:
 > - Python 3.x
 > - pip (Python Package Installer) - latest version
-> - SQlite Database - latest version (https://www.sqlite.org/)
+> - SQLite Database - latest version (https://www.sqlite.org/)
 
 <!-- SETTING UP VENV -->
 ## Setting Up the Virtual Environment
