@@ -2,6 +2,11 @@
 
 ![LOGO](ComicSnap/static/img/logocomicsnap.jpg)
 
+<p align="center">
+  <img src="ComicSnap/static/img/logocomicsnap.jpg" width="400" alt="Logo"/>
+  <br>
+</p>
+
 ## About the project
 
 ![HOME](ComicSnap/static/img/homecomicsnap.jpg)
