@@ -18,7 +18,7 @@ ComicSnap should now be accessible at http:// in your web-browser.
 
 ## License
 
-This application was distributed under the Apache 2.0 License. 
+This application was distributed under the Apache 2.0 License. See [LICENSE](LICENSE) for more details.
 
 ## Contacts
 
