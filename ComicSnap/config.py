@@ -15,8 +15,3 @@ class Config:
     # Altri parametri
     MAX_SEARCH_RESULTS = int(os.getenv('MAX_SEARCH_RESULTS', 100))
     TOKEN_EXPIRY_HOURS = int(os.getenv('TOKEN_EXPIRY_HOURS', 24))
-    
-    @staticmethod
-    def init_app(app):
-        # Puoi aggiungere qui inizializzazioni specifiche per l'applicazione
-        pass
